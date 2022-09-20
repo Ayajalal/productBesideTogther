@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+}
+h1{
+   font-size: 24px;}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow:hidden ;
+}
+li{
+    float:left;
+    /* display:inline; */
+}
+li a{
+    display: block;
+    padding: 14px 16px;
+    color: black;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: orangered;
+    
+}
+.image{
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+hr{
+    
+    border: 0;
+    border-top: 4px solid orangered;
+    margin-bottom: 20px;
+    
+}
+.topContainer{
+margin: 50px;
+}
+.container{
+    background-color: white;
+    height: 600px;
+    display: flex;
+flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    
+}
+.card{
+    float: left;
+     width:16.3%;
+    height: 300px;
+    padding: 8px 2px;
+    cursor: pointer;
+
+}
+
+.rating {
+  
+    margin: 0  ;
+    font-size: 25px;
+    overflow:hidden;
+    margin-right: 10px;
+}
+.rating input {
+float: right;
+opacity: 0;
+position: absolute;
+}
+.rating a{
+    float:left;
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+    color: #aaa;
+}
+.rating label {
+    float:right;
+    color: #aaa;
+ 
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+    color: orange;
+    cursor: pointer;
+}
+ol{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    padding: 1px 0;
+}
+/* ol li{
+    margin:0 15px
+} */
+li {
+    font-size: 25px;
+    color: white;
+}
